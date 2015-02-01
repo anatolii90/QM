@@ -1,4 +1,4 @@
 *.iml
 *.idea
 target/
-META_INF/context.xml
+src/main/webapp/META-INF/context.xml
