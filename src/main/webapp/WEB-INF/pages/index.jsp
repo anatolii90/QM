@@ -1,8 +1,15 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
 <body>
-<h1>Witaj!</h1>
- 
-<h3>Wiadomosc : ${message}</h3>
-<h3>Licznik : ${counter}</h3>	
+
+    <h1>Users list:</h1>
+
+    <ul>
+        <c:forEach items="${users}" var="user">
+            <li>${user.login} : ${user.password}</li>
+        </c:forEach>
+    </ul>
+
 </body>
 </html>
